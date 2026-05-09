@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Substack Notes Hider</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap');
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { width: 260px; background: #0f0f0f; color: #f0ece4; font-family: 'DM Sans', sans-serif; padding: 22px 18px 18px; }
+    .header { display: flex; align-items: center; gap: 9px; margin-bottom: 16px; }
+    .logo-icon { width: 30px; height: 30px; background: #ff6719; border-radius: 7px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .logo-icon svg { width: 15px; height: 15px; fill: white; }
+    .title { font-family: 'Instrument Serif', serif; font-size: 14px; color: #f0ece4; line-height: 1.2; }
+    .subtitle { font-size: 10px; color: #ff6719; margin-top: 1px; }
+    .divider { height: 1px; background: #1e1e1e; margin-bottom: 14px; }
+    .pill { display: flex; align-items: center; gap: 7px; background: #161616; border: 1px solid #242424; border-radius: 10px; padding: 11px 14px; margin-bottom: 8px; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: #ff6719; flex-shrink: 0; }
+    .pill-text { font-size: 11px; color: #888; }
+    .footer { margin-top: 14px; font-size: 10px; color: #333; }
+    .footer span { color: #ff6719; font-weight: 500; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h12v2H3z"/></svg></div>
+    <div>
+      <div class="title">Substack Notes Hider</div>
+      <div class="subtitle">for Substack</div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="pill"><div class="dot"></div><div class="pill-text">Notes feed — hidden</div></div>
+  <div class="pill"><div class="dot"></div><div class="pill-text">Composer — hidden</div></div>
+  <div class="pill"><div class="dot"></div><div class="pill-text">Notifications bell — hidden</div></div>
+  <div class="footer">made by <span>hopeee</span></div>
+</body>
+</html>

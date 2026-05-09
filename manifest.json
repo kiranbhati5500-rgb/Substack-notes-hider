@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Substack Notes Hider",
+  "version": "1.0",
+  "description": "Hide the Notes feed on Substack for a cleaner reading experience.",
+  "permissions": [],
+  "host_permissions": ["*://*.substack.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.substack.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": { "48": "icon.png" }
+  },
+  "icons": { "48": "icon.png" }
+}
